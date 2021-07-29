@@ -22,8 +22,11 @@ header .logo .logo-img {
 }
 
 .location {
+  background-color: #EAEAEA;
   border: solid 2px pink;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 .location .search-form {
   display: inline-block;
@@ -36,7 +39,7 @@ header .logo .logo-img {
 }
 .location .searchFormSearchinput {
   padding: 0 1.5rem;
-  width: 14rem;
+  width: 10rem;
   font-size: 1rem;
   font-weight: xxx;
   font-family: xxx;
@@ -45,7 +48,7 @@ header .logo .logo-img {
 }
 
 .introduction {
-  background-color: #9a9a9a;
+  background-color: #F6F6F6;
   padding: 1rem;
   text-align: center;
 }
@@ -58,24 +61,33 @@ header .logo .logo-img {
   border: 0;
   padding: 1rem;
   font-weight: bold;
-  box-shadow: black 0 0 5px 5px;
+  box-shadow: #7e7777 0 0 2px 2px;
 }
 
 .functioning {
   counter-reset: indicate-number;
 }
-.functioning .step {
-  counter-increment: indicate-number;
-  border: solid 2px blue;
-  border-radius: 1rem;
-  background-color: lightgrey;
-  padding: 2rem;
+.functioning .steps-container {
+  justify-content: space-evenly;
+  margin-bottom: 1px;
 }
-.functioning .step:before {
-  content: counter(indicate-number);
+.functioning .step {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  counter-increment: indicate-number;
+  border-radius: 1rem;
+  background-color: #F6F6F6;
+  margin-left: 15px;
+}
+.functioning .step-number {
+  position: relative;
+  left: -15px;
+  width: 20px;
   background-color: purple;
   border-radius: 50%;
-  padding: 0.5rem;
+  text-align: center;
+  color: white;
 }
 
 .restaurant-image {
