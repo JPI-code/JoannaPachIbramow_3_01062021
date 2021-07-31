@@ -19,6 +19,7 @@ a {
 header {
   .logo {
     border: 2px solid red;
+    padding:1rem;
     .logo-img {
       display: block;
       width: 50%;
@@ -30,7 +31,7 @@ header {
 .location {
   background-color: #EAEAEA;
   border:solid 2px pink;
-  padding:2rem;
+  padding:1rem;
   display: flex;
   justify-content: center;
   // text-align: center;
@@ -39,9 +40,10 @@ header {
   margin-left: auto;
   margin-right: auto;
   border:solid 2px green;
+  // background-color: #EAEAEA;
 
 }
-  .searchFormWrapicon {
+  .icon-in-location {
 margin-left: auto;
     // padding: 1rem 1.25rem;
     // text-align: center;
@@ -51,10 +53,12 @@ margin-left: auto;
     // box-sizing: border-box;
     width: 10rem;
     font-size: 1rem;
-    font-weight: xxx;
-    font-family: xxx;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: black;
     border: 0;
     margin-right: auto;
+    background-color: #EAEAEA;
   }
 }
 
@@ -73,25 +77,30 @@ margin-left: auto;
   font-weight: bold;
   box-shadow: rgb(126, 119, 119) 0 0 2px 2px;
 }
+.icon-in-functioning-section{
+  padding:1rem;
+}
 .functioning{
   counter-reset: indicate-number;
   .steps-container{
-    justify-content: space-evenly;
-    margin-bottom: 1px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    // gap: bottom 20px;
+    // margin-bottom: 5px;
   }
   .step{
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 90px;
     counter-increment: indicate-number;
     border-radius: 1rem;
     background-color: #F6F6F6;
     margin-left: 15px;
-
   }
   .step-number{
     position: relative;
-    left: -15px;
+    left: -10px;
     width: 20px;
     background-color: purple;
     border-radius: 50%;
