@@ -18,7 +18,7 @@ a {
 
 header {
   .logo {
-    border: 2px solid red;
+    // border: 2px solid red;
     padding:1rem;
     .logo-img {
       display: block;
@@ -30,7 +30,7 @@ header {
 }
 .location {
   background-color: #EAEAEA;
-  border:solid 2px pink;
+  // border:solid 2px pink;
   padding:1rem;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ header {
   display:inline-block;
   margin-left: auto;
   margin-right: auto;
-  border:solid 2px green;
+  // border:solid 2px green;
   // background-color: #EAEAEA;
 
 }
@@ -115,9 +115,82 @@ margin-left: auto;
   //   padding:0.5rem;
   // }
 }
-.restaurant-image{
-  height: 150px;
+.restaurant-card{
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
+ .restaurant-image {
+      height: 12rem;
+      width: 100%;
+      border: transparent solid 0px;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: none;
+      object-fit: cover;
+    }
+    .restaurant-label{ 
+        background-color:$tertiary-color;
+        color: darken($tertiary-color, 50%);
+        padding: 0.5rem;
+        border-radius: 0.125rem;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
+      }
+// .restaurant-image{
+//   height: 150px;
+// }
 
 
+.footer {
+  background-color: #353535;
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    // padding: $appPadding;
+  }
+  
+  .footer-logo {
+    color: white;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    font-size: 1.2rem;
+    // margin-bottom: $appPadding;
+  }
 
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__listElt {
+    margin: 0.5rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+  }
+}
