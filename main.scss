@@ -1,6 +1,7 @@
 /* Integrate font type: Raleway from Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
+@import "menus/style_menu.scss";
 
 $primary_color: #9356dc;
 $secondary_color: #ff79da;
@@ -8,13 +9,14 @@ $tertiary_color: #99e2d0;
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 2%;
+  margin: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
 
 header {
   .logo {
@@ -80,13 +82,12 @@ margin-left: auto;
 .icon-in-functioning-section{
   padding:1rem;
 }
-.functioning{
-  counter-reset: indicate-number;
+.functioning{ 
   .steps-container{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    // gap: bottom 20px;
+    gap: 20px;
     // margin-bottom: 5px;
   }
   .step{
@@ -115,16 +116,30 @@ margin-left: auto;
   //   padding:0.5rem;
   // }
 }
+.restaurants{
+  display: flex;
+  flex-flow: column nowrap;
+  padding:5%;
+  gap: 20px;
+}
 .restaurant-card{
+  height: 15rem;
     background-color: white;
     border-radius: 1rem;
     position: relative;
     text-decoration: none;
     color: inherit;
     display: block;
+    border: solid 2px red;
+}
+.restaurant-card-cover{
+  border: solid 2px blue;
+  width: 100%;
+  height: 100%;
+  margin:0;
 }
  .restaurant-image {
-      height: 12rem;
+      height: 70%;
       width: 100%;
       border: transparent solid 0px;
       border-radius: 1rem 1rem 0 0;
@@ -143,8 +158,33 @@ margin-left: auto;
 // .restaurant-image{
 //   height: 150px;
 // }
+.restaurant-caption{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.restaurant-caption-text{
+  display: block;
+  width: 80%;
+  margin-right: auto;
+  border:solid 2px green;
+  h5{
+    margin:0 0 10px 0;
+  }
+}
 
+.heart-icon{
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  border:solid 2px brown;
+  margin-left: auto;
+  :hover{
+    color:$primary_color;
+  }
+  .heart-icon .card {}
 
+}
 .footer {
   background-color: #353535;
   
