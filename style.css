@@ -6,7 +6,7 @@ body {
 }
 
 .logo-menu {
-  border: solid 2px lime;
+  border: solid 2px #9356DC;
   display: flex;
   align-items: center;
 }
@@ -17,11 +17,25 @@ body {
   position: relative;
 }
 
-.restaurant-hero-picture {
+.restaurant-hero-image {
   max-width: 100%;
   max-height: 32rem;
+  object-fit: cover;
+}
+
+.hero-image {
   width: 100%;
   height: 18rem;
+  object-fit: cover;
+}
+
+.restaurant-name {
+  font-family: "Shrikhand", "cursive";
+}
+
+.menu-header {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 body {
@@ -84,7 +98,7 @@ header .logo .logo-img {
   border: 0;
   padding: 1rem;
   font-weight: bold;
-  box-shadow: #7e7777 0 0 2px 2px;
+  box-shadow: 5px 5px red;
 }
 
 .icon-in-functioning-section {
