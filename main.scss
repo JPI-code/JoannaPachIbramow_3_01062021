@@ -84,9 +84,7 @@ margin-left: auto;
 .icon-in-functioning-section{
   padding:1rem;
 }
-.icon-in-functioning-section:hover{
-  color: $primary_color;
-}
+
 .functioning{
   background-color: white;
   padding:2rem;
@@ -109,6 +107,7 @@ margin-left: auto;
   }
   .step:hover{
     background-color: #F5EDFF;
+    color:$primary_color;
   }
   .step-number{
     position: relative;
@@ -196,10 +195,20 @@ margin-left: auto;
   justify-content: center;
   // border:solid 2px brown;
   margin-left: auto;
-  :hover{
-    color:$primary_color;
+}
+.heart-icon:hover{
+  color:$primary_color;
+  .outline{
+    visibility: hidden;
+    width: 0;
   }
-  
+  .full{
+    visibility:visible;
+  }
+}
+.full{
+  visibility: hidden;
+  position: absolute;
 }
 .footer {
   background-color: #353535;

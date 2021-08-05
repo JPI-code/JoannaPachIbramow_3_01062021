@@ -14,7 +14,8 @@ body {
 .arrow-icon {
   margin-right: auto;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: calc(52px/2);
 }
 
 .restaurant-hero-image {
@@ -31,11 +32,70 @@ body {
 
 .restaurant-name {
   font-family: "Shrikhand", "cursive";
+  margin-left: 10px;
+}
+
+.menu-container {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  position: relative;
 }
 
 .menu-header {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.courses {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses .submenu {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses .submenu .submenu-title {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+.courses .submenu .submenu-item {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  transform: scale(0);
+  max-width: 100%;
+}
+.courses .submenu .submenu-item-label {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+.courses .submenu .submenu-item-name {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.courses .submenu .submenu-item-description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.courses .submenu .submenu-item-price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
 }
 
 body {
@@ -105,10 +165,6 @@ header .logo .logo-img {
   padding: 1rem;
 }
 
-.icon-in-functioning-section:hover {
-  color: #9356dc;
-}
-
 .functioning {
   background-color: white;
   padding: 2rem;
@@ -131,6 +187,7 @@ header .logo .logo-img {
 }
 .functioning .step:hover {
   background-color: #F5EDFF;
+  color: #9356dc;
 }
 .functioning .step-number {
   position: relative;
@@ -211,8 +268,21 @@ header .logo .logo-img {
   justify-content: center;
   margin-left: auto;
 }
-.heart-icon :hover {
+
+.heart-icon:hover {
   color: #9356dc;
+}
+.heart-icon:hover .outline {
+  visibility: hidden;
+  width: 0;
+}
+.heart-icon:hover .full {
+  visibility: visible;
+}
+
+.full {
+  visibility: hidden;
+  position: absolute;
 }
 
 .footer {
