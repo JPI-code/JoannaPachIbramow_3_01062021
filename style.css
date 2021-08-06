@@ -40,11 +40,15 @@ body {
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
 }
 
 .menu-header {
   display: flex;
   flex-flow: row nowrap;
+  width: 100%;
 }
 
 .courses {
@@ -75,24 +79,31 @@ body {
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   max-width: 100%;
+  overflow: hidden;
+  animation: menu-appear 2s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 
 .submenu-item-label {
   white-space: nowrap;
   text-overflow: ellipsis;
   flex: 1;
+  overflow: hidden;
 }
 
 .submenu-item-name {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .submenu-item-description {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .submenu-item-price {
@@ -101,6 +112,95 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
+}
+
+.submenu-selection-button {
+  background-color: #99e2d0;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -1rem -5rem -1rem 1rem;
+}
+
+.check-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  border-radius: 50%;
+  color: #99e2d0;
+}
+
+.submenu-selection-button {
+  transition-duration: 0.4s;
+}
+
+.submenu-item-price {
+  transition-duration: 0.4s;
+}
+
+.check-symbol {
+  transition-duration: 0.4s;
+  transform: rotate(-360deg);
+}
+
+.submenu-item:hover .submenu-selection-button {
+  margin: -1rem;
+}
+.submenu-item:hover .submenu-item-price {
+  margin-right: 1.5rem;
+}
+.submenu-item:hover .check-symbol {
+  transform: rotate(0deg);
+}
+
+@keyframes menu-appear {
+  from {
+    opacity: 0;
+    margin-top: -2rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
 }
 
 body {
@@ -164,6 +264,7 @@ header .logo .logo-img {
   padding: 1rem;
   font-weight: bold;
   box-shadow: 2px 2px 10px grey;
+  align-self: center;
 }
 
 .icon-in-functioning-section {

@@ -1,11 +1,12 @@
+$primary_color: #9356dc;
+$secondary_color: #ff79da;
+$tertiary_color: #99e2d0;
+
 /* Integrate font type: Raleway from Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
 @import "menus/style_menu.scss";
-
-$primary_color: #9356dc;
-$secondary_color: #ff79da;
-$tertiary_color: #99e2d0;
+@import "animations";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -78,6 +79,7 @@ margin-left: auto;
   padding:1rem;
   font-weight: bold;
   box-shadow:  2px 2px 10px grey;
+  align-self: center;
   //x y blur rgb*//
   // box-shadow: rgb(126, 119, 119) 0 0 2px 2px;
 }

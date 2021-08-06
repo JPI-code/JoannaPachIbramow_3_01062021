@@ -1,0 +1,48 @@
+.submenu-selection-button{
+    transition-duration: 0.4s;
+}
+.submenu-item-price{
+    transition-duration: 0.4s;
+}
+.check-symbol{
+    transition-duration: 0.4s;
+    transform: rotate(-360deg);
+}
+.submenu-item:hover{
+    .submenu-selection-button{
+    margin:-1rem;
+    }
+    .submenu-item-price{
+        margin-right:1.5rem;
+    }
+    .check-symbol{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes menu-appear{
+    from {
+        opacity: 0;
+        margin-top:-2rem;
+    }
+    to{
+        opacity: 1;
+        margin-top:0;
+    }
+}
+
+@for $i from 0 to 9 {
+    .delay-#{$i}{
+        animation-delay: #{$i/10}s;
+    }
+}
+// to po prostu utworzy nam klasy takie:
+// .delay-1{
+//     animation-delay: 1/10s;
+// }
+
+// .delay-2{
+//     animation-delay: 2/10s;
+// }
+
+//itp...
