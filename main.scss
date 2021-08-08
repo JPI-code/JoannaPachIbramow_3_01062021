@@ -224,7 +224,7 @@ margin-left: auto;
   .footer-logo {
     color: white;
     font-family: "Shrikhand", "cursive";
-    margin: 0;
+    margin: 10px;
     font-size: 1.2rem;
     // margin-bottom: $appPadding;
   }
@@ -232,19 +232,19 @@ margin-left: auto;
   .footer-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px;
   }
 
-  &__listElt {
+  .footer-list-Elt{
     margin: 0.5rem 0;
 
-    &:first-child {
-      margin-top: 0;
-    }
+    // &:first-child {
+    //   margin-top: 0;
+    // }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+    // &:last-child {
+    //   margin-bottom: 0;
+    // }
   }
 
   &__link {
@@ -256,8 +256,12 @@ margin-left: auto;
     }
   }
 
-  &__icon {
-    width: 1.2rem;
-    margin-right: 0.5rem;
+  // &__icon {
+  //   width: 1.2rem;
+  //   margin-right: 10px;
+  //   border: solid 2px red;
+  // }
+  .footer-icon{
+    margin-right: 10px;
   }
 }

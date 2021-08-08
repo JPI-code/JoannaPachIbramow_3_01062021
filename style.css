@@ -13,6 +13,7 @@ body {
 
 .arrow-icon {
   margin-right: auto;
+  margin-left: 10px;
   align-items: center;
   position: absolute;
   top: calc(52px/2);
@@ -33,6 +34,7 @@ body {
 .restaurant-name {
   font-family: "Shrikhand", "cursive";
   margin-left: 10px;
+  width: 80%;
 }
 
 .menu-container {
@@ -401,22 +403,16 @@ header .logo .logo-img {
 .footer .footer-logo {
   color: white;
   font-family: "Shrikhand", "cursive";
-  margin: 0;
+  margin: 10px;
   font-size: 1.2rem;
 }
 .footer .footer-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
-.footer__listElt {
+.footer .footer-list-Elt {
   margin: 0.5rem 0;
-}
-.footer__listElt:first-child {
-  margin-top: 0;
-}
-.footer__listElt:last-child {
-  margin-bottom: 0;
 }
 .footer__link {
   color: white;
@@ -425,9 +421,8 @@ header .logo .logo-img {
 .footer__link:hover {
   text-decoration: underline;
 }
-.footer__icon {
-  width: 1.2rem;
-  margin-right: 0.5rem;
+.footer .footer-icon {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

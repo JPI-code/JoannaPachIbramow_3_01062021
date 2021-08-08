@@ -11,6 +11,7 @@ body{
 }
 .arrow-icon{
     margin-right: auto;
+    margin-left: 10px;
     align-items: center;
     position: absolute;
     top: calc(52px/2);
@@ -28,6 +29,7 @@ body{
 .restaurant-name{
     font-family: "Shrikhand", "cursive";
     margin-left: 10px;
+    width: 80%;
 }
 .menu-container{
         margin-top: -4rem;
@@ -41,7 +43,7 @@ body{
 .menu-header{
     display: flex;
     flex-flow: row nowrap;
-width: 100%;
+    width: 100%;
   }
   .courses{
       display: flex;
