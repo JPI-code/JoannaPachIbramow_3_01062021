@@ -50,12 +50,15 @@ body{
       flex-flow: column nowrap;
       justify-content: space-between;
   }
+
+  
       .submenu{
         display: flex;
         flex-flow: column nowrap;
         // align-items: center;
         justify-content: space-between;
       }
+ 
         .submenu-title{
             text-transform: uppercase;
             position: relative;
@@ -131,6 +134,15 @@ body{
               background-color: white;
               border-radius:50%;
               color:$tertiary-color;
+          }
+          @media screen and (min-width: 1030px) {
+            .submenu{
+              width: 100%;
+              flex-flow: row nowrap;
+            }
+            .submenu-item{
+              width: 20%;
+            }
           }
         
     

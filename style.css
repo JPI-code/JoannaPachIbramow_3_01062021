@@ -136,6 +136,16 @@ body {
   color: #99e2d0;
 }
 
+@media screen and (min-width: 1030px) {
+  .submenu {
+    width: 100%;
+    flex-flow: row nowrap;
+  }
+
+  .submenu-item {
+    width: 20%;
+  }
+}
 .submenu-selection-button {
   transition-duration: 0.4s;
 }
@@ -226,7 +236,7 @@ header .logo .logo-img {
 }
 
 .location {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -248,11 +258,11 @@ header .logo .logo-img {
   color: black;
   border: 0;
   margin-right: auto;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .introduction {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 1rem;
   text-align: center;
 }
@@ -289,12 +299,12 @@ header .logo .logo-img {
   height: 90px;
   counter-increment: indicate-number;
   border-radius: 1rem;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin-left: 15px;
   box-shadow: 2px 2px 10px lightgrey;
 }
 .functioning .step:hover {
-  background-color: #F5EDFF;
+  background-color: #f5edff;
   color: #9356dc;
 }
 .functioning .step-number {
@@ -310,12 +320,18 @@ header .logo .logo-img {
 .restaurants {
   display: flex;
   flex-flow: column nowrap;
+}
+
+.restaurants-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   padding: 5%;
   gap: 20px;
 }
 
 .restaurant-card {
   height: 15rem;
+  width: 100%;
   background-color: white;
   border-radius: 1rem;
   position: relative;
@@ -325,6 +341,15 @@ header .logo .logo-img {
   box-shadow: 2px 2px 10px lightgrey;
 }
 
+@media screen and (min-width: 1030px) {
+  .restaurant-card {
+    width: 45%;
+  }
+
+  .restaurants-wrapper {
+    justify-content: space-around;
+  }
+}
 .restaurant-card-cover {
   width: 100%;
   height: 100%;
