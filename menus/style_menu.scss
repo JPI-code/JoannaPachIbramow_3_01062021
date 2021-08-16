@@ -1,3 +1,5 @@
+
+
 body{
     background-color: #F6F6F6;
 }
@@ -62,10 +64,19 @@ body{
         .submenu-title{
             text-transform: uppercase;
             position: relative;
-            padding-bottom: 0.5rem;
+            // padding-bottom: 0.5rem;
             font-weight: normal;
             margin-left: 10px;
+            margin-bottom: 0;
         }  
+        .title-underline{
+          background-color:$tertiary-color;
+          height: 1px;
+          width: 10rem;
+          position: relative;
+          padding-bottom: 0.5rem;
+          margin-left: 10px;
+        }
         .submenu-item{
             background-color: white;
             padding: 1rem;
@@ -120,7 +131,7 @@ body{
             //     height: 50%;
             //     width: 50%;
             //     background-color: white;
-            //     border-radius:50%;
+            //     border-radius:51%;
             //     color:$tertiary-color;
             //   }
 

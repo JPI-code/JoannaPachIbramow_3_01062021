@@ -3,11 +3,28 @@ $secondary_color: #ff79da;
 $tertiary_color: #99e2d0;
 
 /* Integrate font type: Raleway from Google Fonts*/
+@use "sass:math";
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
 @import "menus/style_menu.scss";
 @import "animations";
 
+.loader{
+  height:100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation:veil-disapear 5s;
+  animation-fill-mode: both;
+  .loading-animation{
+    // border: solid 2px red;
+    position: absolute;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -232,7 +249,8 @@ header {
   .footer-container {
     display: flex;
     flex-direction: column;
-    // padding: $appPadding;
+    padding: 10px;
+    border: solid 2px blue;
   }
 
   .footer-logo {
@@ -240,12 +258,15 @@ header {
     font-family: "Shrikhand", "cursive";
     margin: 10px;
     font-size: 1.2rem;
-    // margin-bottom: $appPadding;
+    margin-bottom: 10px;
   }
-
+  .footer-text{
+    // position: absolute;
+    margin-left: 5rem;
+  }
   .footer-list {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 10px;
   }
 
@@ -264,6 +285,7 @@ header {
   &__link {
     color: white;
     text-decoration: none;
+    border: solid 2px orange;
 
     &:hover {
       text-decoration: underline;
@@ -277,5 +299,6 @@ header {
   // }
   .footer-icon {
     margin-right: 10px;
+    position:absolute;
   }
 }
