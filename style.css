@@ -75,11 +75,11 @@ body {
 
 .title-underline {
   background-color: #99e2d0;
-  height: 1px;
-  width: 10rem;
+  height: 0.1rem;
+  width: 3rem;
   position: relative;
-  padding-bottom: 0.5rem;
-  margin-left: 10px;
+  padding-bottom: 0.1rem;
+  margin: 5px 0 12px 10px;
 }
 
 .submenu-item {
