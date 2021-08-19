@@ -231,13 +231,15 @@ header {
 }
 .heart-icon:hover {
   color: $primary_color;
+
   .outline {
     visibility: hidden;
     width: 0;
+//     background: rgb(2,0,36);
+// background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
   }
   .full {
     visibility: visible;
-    // background-image: linear-gradient(180deg, $secondary_color, $primary_color);
   }
 }
 .full {
@@ -251,7 +253,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: solid 2px blue;
+    // border: solid 2px blue;
   }
 
   .footer-logo {
@@ -263,7 +265,7 @@ header {
   }
   .footer-text{
     // position: absolute;
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   .footer-list {
     list-style: none;
@@ -286,7 +288,7 @@ header {
   &__link {
     color: white;
     text-decoration: none;
-    border: solid 2px orange;
+    // border: solid 2px orange;
 
     &:hover {
       text-decoration: underline;

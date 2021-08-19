@@ -79,6 +79,11 @@ body{
           // margin-left: 10px;
           // margin-bottom: 10px;
         }
+        @media screen and (min-width: 1030px) {
+          .title-underline{
+            position:absolute
+          }
+          }
         .submenu-item{
             background-color: white;
             padding: 1rem;
@@ -148,6 +153,10 @@ body{
               border-radius:50%;
               color:$tertiary-color;
           }
+          .footer-text{
+            // position: absolute;
+            margin-left: 2rem;
+          }
           @media screen and (min-width: 1030px) {
             .submenu{
               width: 100%;
@@ -157,5 +166,4 @@ body{
               width: 20%;
             }
           }
-        
-    
+ 

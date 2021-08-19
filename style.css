@@ -82,6 +82,11 @@ body {
   margin: 5px 0 12px 10px;
 }
 
+@media screen and (min-width: 1030px) {
+  .title-underline {
+    position: absolute;
+  }
+}
 .submenu-item {
   background-color: white;
   padding: 1rem;
@@ -143,6 +148,10 @@ body {
   background-color: white;
   border-radius: 50%;
   color: #99e2d0;
+}
+
+.footer-text {
+  margin-left: 2rem;
 }
 
 @media screen and (min-width: 1030px) {
@@ -494,7 +503,6 @@ header .logo .logo-img {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  border: solid 2px blue;
 }
 .footer .footer-logo {
   color: white;
@@ -504,7 +512,7 @@ header .logo .logo-img {
   margin-bottom: 10px;
 }
 .footer .footer-text {
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 .footer .footer-list {
   list-style: none;
@@ -517,7 +525,6 @@ header .logo .logo-img {
 .footer__link {
   color: white;
   text-decoration: none;
-  border: solid 2px orange;
 }
 .footer__link:hover {
   text-decoration: underline;
