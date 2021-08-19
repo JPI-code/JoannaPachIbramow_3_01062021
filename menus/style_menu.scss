@@ -4,7 +4,7 @@ body{
     background-color: #F6F6F6;
 }
 .logo-menu{
-    border: solid 2px #9356DC;
+    // border: solid 2px #9356DC;
     display: flex;
     align-items: center;
     // img{
@@ -67,23 +67,32 @@ body{
             // padding-bottom: 0.5rem;
             font-weight: normal;
             margin-left: 10px;
-            margin-bottom: 0;
+            margin-bottom: 5px;
         }  
-        .title-underline{
-          background-color:$tertiary-color;
-          height: 0.1rem;
+        .submenu-title:after {
+          content: "";
           width: 3rem;
-          position: relative;
-          padding-bottom: 0.1rem;
-          margin: 5px 0 12px 10px;
-          // margin-left: 10px;
-          // margin-bottom: 10px;
+          height: 0.25rem;
+          background-color: $tertiary-color;
+          position: absolute;
+          left: 0;
+          bottom: 1rem; 
+          top: 25px;
         }
-        @media screen and (min-width: 1030px) {
-          .title-underline{
-            position:absolute
-          }
-          }
+        // .title-underline{
+        //   background-color:$tertiary-color;
+        //   height: 0.1rem;
+        //   width: 3rem;
+        //   position: relative;
+        //   padding-bottom: 0.1rem;
+        //   margin: 5px 0 12px 10px;
+        // }
+
+        // @media screen and (min-width: 1030px) {
+        //   .title-underline{
+        //     position: fixed;
+        //   }
+        //   }
         .submenu-item{
             background-color: white;
             padding: 1rem;
@@ -98,6 +107,11 @@ body{
             animation-fill-mode: both;
             animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
         }
+        // @media screen and (max-width: 1029px) {
+        //   .submenu-title:after{
+        //     bottom: 50px;
+        //   }
+        // }
         .submenu-item-label{
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -158,12 +172,30 @@ body{
             margin-left: 2rem;
           }
           @media screen and (min-width: 1030px) {
-            .submenu{
-              width: 100%;
+            .courses{
+              display: flex;
               flex-flow: row nowrap;
+              // border: solid 2px brown;
             }
+            .submenu{
+              width: 30%;
+              flex-flow: column nowrap;
+              justify-content: space-between;   
+              // border: solid 2px yellow;
+                    }
             .submenu-item{
-              width: 20%;
+              // width: 27%;
+              // border: solid 2px orange;
+            }
+            .submenu-item-options{
+              display:flex;
+              flex-flow: column nowrap;
+              justify-content: space-between;
+              padding-top: 1rem;
+              // border: solid 2px green;
+            }
+            .submenu-item-label{
+              // border: solid 2px blue;
             }
           }
  
