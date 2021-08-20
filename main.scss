@@ -228,23 +228,31 @@ header {
   justify-content: center;
   // border:solid 2px brown;
   margin-left: auto;
+
 }
 .heart-icon:hover {
-  color: $primary_color;
+  // color: $primary_color;
+  
 
   .outline {
     visibility: hidden;
     width: 0;
-//     background: rgb(2,0,36);
-// background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
+
   }
   .full {
     visibility: visible;
+    &:before {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(180deg,rgba(146, 86, 220, 0.7),rgba(255, 121, 218, 0.7));
+      }
   }
 }
 .full {
   visibility: hidden;
   position: absolute;
+
+
 }
 .footer {
   background-color: #353535;
