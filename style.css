@@ -309,9 +309,22 @@ a {
 
 header .logo {
   padding: 1rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
-header .logo .logo-img {
-  display: block;
+header .header-logo {
+  border: 2px solid red;
+  color: black;
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -528,11 +541,11 @@ header .logo .logo-img {
 .footer .footer-list-Elt {
   margin: 0.5rem 0;
 }
-.footer__link {
+.footer .footer-link {
   color: white;
   text-decoration: none;
 }
-.footer__link:hover {
+.footer .footer-link:hover {
   text-decoration: underline;
 }
 .footer .footer-icon {
