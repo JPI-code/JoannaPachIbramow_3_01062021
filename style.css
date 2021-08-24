@@ -315,7 +315,6 @@ header .logo {
   align-items: center;
 }
 header .header-logo {
-  border: 2px solid red;
   color: black;
   font-family: "Shrikhand", "cursive";
   margin: 0;
@@ -370,8 +369,16 @@ header .header-logo {
   border: 0;
   padding: 1rem;
   font-weight: bold;
-  box-shadow: 2px 2px 10px grey;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   align-self: center;
+}
+
+.oval-button:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background: #020024;
+  background: linear-gradient(0deg, #020024 0%, #a26ae4 0%, #f78bd9 100%);
 }
 
 .icon-in-functioning-section {
@@ -415,6 +422,7 @@ header .header-logo {
 .restaurants {
   display: flex;
   flex-flow: column nowrap;
+  padding: 2rem;
 }
 
 .restaurants-wrapper {
@@ -481,12 +489,12 @@ header .header-logo {
   margin-right: auto;
 }
 .restaurant-caption-text h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 5px 0 5px 5px;
 }
 .restaurant-caption-text .restaurant-description {
   margin: 0 0 5px 5px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .heart-icon {
@@ -526,9 +534,8 @@ header .header-logo {
 .footer .footer-logo {
   color: white;
   font-family: "Shrikhand", "cursive";
-  margin: 10px;
+  margin: 10px 10px 0 10px;
   font-size: 1.2rem;
-  margin-bottom: 10px;
 }
 .footer .footer-text {
   margin-left: 2rem;
