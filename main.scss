@@ -246,6 +246,7 @@ header {
     width: 0;
   }
   .full {
+    animation: heart-animation 2s;
     visibility: visible;
     &:before {
       color: transparent;

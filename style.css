@@ -61,7 +61,7 @@ body {
 .submenu {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .submenu-title {
@@ -159,7 +159,7 @@ body {
   .submenu {
     width: 30%;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: start;
   }
 
   .submenu-item-options {
@@ -281,6 +281,14 @@ body {
   animation-delay: 0.8s;
 }
 
+@keyframes heart-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .loader {
   height: 100%;
   width: 100%;
@@ -510,6 +518,7 @@ header .header-logo {
   width: 0;
 }
 .heart-icon:hover .full {
+  animation: heart-animation 2s;
   visibility: visible;
 }
 .heart-icon:hover .full:before {

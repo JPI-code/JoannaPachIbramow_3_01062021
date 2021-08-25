@@ -55,7 +55,7 @@ body {
 .submenu {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .submenu-title {
   text-transform: uppercase;
@@ -143,7 +143,7 @@ body {
   .submenu {
     width: 30%;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: start;
   }
   .submenu-item-options {
     display: flex;

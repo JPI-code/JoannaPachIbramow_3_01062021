@@ -75,3 +75,11 @@
     animation-delay: #{math.div($i, 10)}s;
   }
 }
+@keyframes heart-animation{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
