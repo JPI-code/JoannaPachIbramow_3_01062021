@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
 body {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .logo-menu {
@@ -15,7 +15,7 @@ body {
   margin-left: 10px;
   align-items: center;
   position: absolute;
-  top: calc(80px/2);
+  top: calc(80px / 2);
 }
 
 .restaurant-hero-image {
@@ -221,7 +221,7 @@ body {
 }
 
 .loading-animation div:nth-child(3) {
-  animation-delay: 0;
+  animation-delay: -0.6s;
   background-color: #99e2d0;
 }
 

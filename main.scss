@@ -9,8 +9,8 @@ $tertiary_color: #99e2d0;
 @import "menus/style_menu.scss";
 @import "animations";
 
-.loader{
-  height:100%;
+.loader {
+  height: 100%;
   width: 100%;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.8);
@@ -18,9 +18,9 @@ $tertiary_color: #99e2d0;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation:veil-disapear 5s;
+  animation: veil-disapear 5s;
   animation-fill-mode: both;
-  .loading-animation{
+  .loading-animation {
     position: absolute;
   }
 }
@@ -44,20 +44,20 @@ header {
     align-items: center;
   }
 
-  .header-logo{
-  color: black;
-  font-family: "Shrikhand", "cursive";
-  margin: 0;
-  font-size: 3rem;
-  margin-bottom: 10px;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
-}
+  .header-logo {
+    color: black;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .location {
@@ -108,9 +108,14 @@ header {
 }
 .oval-button:hover {
   background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
-  background: rgb(2,0,36);
-background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(162,106,228,1) 0%, rgba(247,139,217,1) 100%);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(162, 106, 228, 1) 0%,
+    rgba(247, 139, 217, 1) 100%
+  );
 }
 
 .icon-in-functioning-section {
@@ -157,9 +162,9 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(162,106,228,1) 0%, rgb
   padding: 2rem;
 }
 
-.restaurants-wrapper{
+.restaurants-wrapper {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   padding: 5%;
   gap: 20px;
 }
@@ -180,7 +185,7 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(162,106,228,1) 0%, rgb
   .restaurant-card {
     width: 45%;
   }
-  .restaurants-wrapper{
+  .restaurants-wrapper {
     justify-content: space-around;
   }
 }
@@ -245,8 +250,12 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(162,106,228,1) 0%, rgb
     &:before {
       color: transparent;
       -webkit-background-clip: text;
-      background-image: linear-gradient(180deg,rgba(146, 86, 220, 0.7),rgba(255, 121, 218, 0.7));
-      }
+      background-image: linear-gradient(
+        180deg,
+        rgba(146, 86, 220, 0.7),
+        rgba(255, 121, 218, 0.7)
+      );
+    }
   }
 }
 
@@ -269,7 +278,7 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(162,106,228,1) 0%, rgb
     margin: 10px 10px 0 10px;
     font-size: 1.2rem;
   }
-  .footer-text{
+  .footer-text {
     margin-left: 2rem;
   }
   .footer-list {
@@ -289,6 +298,6 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(162,106,228,1) 0%, rgb
   }
   .footer-icon {
     margin-right: 10px;
-    position:absolute;
+    position: absolute;
   }
 }

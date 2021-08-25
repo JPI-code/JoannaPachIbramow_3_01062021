@@ -1,97 +1,77 @@
-
-.submenu-selection-button{
-    transition-duration: 0.4s;
+.submenu-selection-button {
+  transition-duration: 0.4s;
 }
-.submenu-item-price{
-    transition-duration: 0.4s;
+.submenu-item-price {
+  transition-duration: 0.4s;
 }
-.check-symbol{
-    transition-duration: 0.4s;
-    transform: rotate(-360deg);
+.check-symbol {
+  transition-duration: 0.4s;
+  transform: rotate(-360deg);
 }
-.submenu-item:hover{
-    .submenu-selection-button{
-    margin:-1rem;
-    }
-    .submenu-item-price{
-        margin-right:1.5rem;
-    }
-    .check-symbol{
-        transform: rotate(0deg);
-    }
-}
-@keyframes veil-disapear{
-    // from {
-    //     // opacity: 1;
-    //     margin-top:-2rem;
-    // }
-    to{
-        opacity: 0;
-      z-index: -1;
-    }
-}
-.loading-animation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px; 
-}
-  .loading-animation div {
-    display: inline-block;
-    // position: absolute;
-    // left: 8px;
-    width: 16px;
-    // background: black;
-    animation: loading-animation 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+.submenu-item:hover {
+  .submenu-selection-button {
+    margin: -1rem;
   }
-  .loading-animation div:nth-child(1) {
-    // left: 8px;
-    animation-delay: -0.24s;
-    background-color: $primary_color;
+  .submenu-item-price {
+    margin-right: 1.5rem;
   }
-  .loading-animation div:nth-child(2) {
-    // left: 32px;
-    animation-delay: -0.12s;
-    background-color: $secondary_color;
+  .check-symbol {
+    transform: rotate(0deg);
   }
-  .loading-animation div:nth-child(3) {
-    // left: 56px;
-    animation-delay: 0;
-    background-color: $tertiary-color;
+}
+@keyframes veil-disapear {
+  to {
+    opacity: 0;
+    z-index: -1;
   }
-  @keyframes loading-animation {
-    0% {
-      top: 8px;
-      height: 64px;
-    }
-    50%, 100% {
-      top: 24px;
-      height: 32px;
-    }
+}
+.loading-animation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.loading-animation div {
+  display: inline-block;
+  width: 16px;
+  animation: loading-animation 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.loading-animation div:nth-child(1) {
+  animation-delay: -0.24s;
+  background-color: $primary_color;
+}
+.loading-animation div:nth-child(2) {
+  animation-delay: -0.12s;
+  background-color: $secondary_color;
+}
+.loading-animation div:nth-child(3) {
+  animation-delay: -0.6s;
+  background-color: $tertiary-color;
+}
+@keyframes loading-animation {
+  0% {
+    top: 8px;
+    height: 64px;
   }
-@keyframes menu-appear{
-    from {
-        opacity: 0;
-        margin-top:-2rem;
-    }
-    to{
-        opacity: 1;
-        margin-top:0;
-    }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+@keyframes menu-appear {
+  from {
+    opacity: 0;
+    margin-top: -2rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 @for $i from 0 to 9 {
-    .delay-#{$i}{
-        animation-delay: #{math.div($i, 10)}s;
-    }
+  .delay-#{$i} {
+    animation-delay: #{math.div($i, 10)}s;
+  }
 }
-// To automatically create classes such as:
-// .delay-1{
-//     animation-delay: 1/10s;
-// }
-
-// .delay-2{
-//     animation-delay: 2/10s;
-// }
-
-//etc...
