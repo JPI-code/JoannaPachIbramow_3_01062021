@@ -168,29 +168,6 @@ body {
     justify-content: space-between;
   }
 }
-.submenu-selection-button {
-  transition-duration: 0.4s;
-}
-
-.submenu-item-price {
-  transition-duration: 0.4s;
-}
-
-.check-symbol {
-  transition-duration: 0.4s;
-  transform: rotate(-360deg);
-}
-
-.submenu-item:hover .submenu-selection-button {
-  margin: -1rem;
-}
-.submenu-item:hover .submenu-item-price {
-  margin-right: 1.5rem;
-}
-.submenu-item:hover .check-symbol {
-  transform: rotate(0deg);
-}
-
 @keyframes veil-disapear {
   to {
     opacity: 0;
@@ -235,6 +212,29 @@ body {
     height: 32px;
   }
 }
+.submenu-selection-button {
+  transition-duration: 0.4s;
+}
+
+.submenu-item-price {
+  transition-duration: 0.4s;
+}
+
+.check-symbol {
+  transition-duration: 0.4s;
+  transform: rotate(-360deg);
+}
+
+.submenu-item:hover .submenu-selection-button {
+  margin: -1rem;
+}
+.submenu-item:hover .submenu-item-price {
+  margin-right: 1.5rem;
+}
+.submenu-item:hover .check-symbol {
+  transform: rotate(0deg);
+}
+
 @keyframes menu-appear {
   from {
     opacity: 0;
@@ -308,6 +308,7 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  max-width: 1440px;
 }
 
 a {
@@ -436,7 +437,6 @@ header .header-logo {
 .restaurants-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 5%;
   gap: 20px;
 }
 
