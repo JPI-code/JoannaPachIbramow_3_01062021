@@ -1,0 +1,26 @@
+{
+  "name": "p3_pach-ibramow_joanna",
+  "version": "1.0.0",
+  "description": "\"Projet n°3 dans le parcour de la formation DEVELOPPEUR WEB chez OPENCLASSROOMS. Mission du projet: Dynamisez une page avec des animations en CSS\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPI-code/JoannaPachIbramow_3_01062021.git"
+  },
+  "keywords": [
+    "Animations",
+    "CSS",
+    "SCSS",
+    "SASS",
+    "HTML"
+  ],
+  "author": "JPI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPI-code/JoannaPachIbramow_3_01062021/issues"
+  },
+  "homepage": "https://github.com/JPI-code/JoannaPachIbramow_3_01062021#readme"
+}
