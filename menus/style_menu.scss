@@ -26,8 +26,13 @@ body {
   object-fit: cover;
 }
 
+.hero-image:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
 .restaurant-name {
-  font-family: "Shrikhand", "cursive";
+  font-family: $font_logo_alike;
   margin-left: 10px;
   width: 80%;
 }
@@ -119,6 +124,9 @@ body {
   align-items: center;
   justify-content: center;
   margin: -1rem -5rem -1rem 1rem;
+}
+.submenu-selection-button:hover{
+  cursor: pointer;
 }
 .check-symbol {
   display: flex;

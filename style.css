@@ -30,6 +30,11 @@ body {
   object-fit: cover;
 }
 
+.hero-image:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .restaurant-name {
   font-family: "Shrikhand", "cursive";
   margin-left: 10px;
@@ -133,6 +138,10 @@ body {
   align-items: center;
   justify-content: center;
   margin: -1rem -5rem -1rem 1rem;
+}
+
+.submenu-selection-button:hover {
+  cursor: pointer;
 }
 
 .check-symbol {
@@ -316,6 +325,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 header .logo {
   padding: 1rem;
   display: flex;
@@ -357,7 +370,7 @@ header .header-logo {
   width: 10rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: black;
   border: 0;
   margin-right: auto;
