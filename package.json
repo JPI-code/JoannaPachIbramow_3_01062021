@@ -4,7 +4,8 @@
   "description": "\"Projet n°3 dans le parcour de la formation DEVELOPPEUR WEB chez OPENCLASSROOMS. Mission du projet: Dynamisez une page avec des animations en CSS\"",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch main.scss style.css"
+    "sass": "sass --watch main.scss style.css",
+    "prefix": "postcss style.css --use autoprefixer -d prefixed"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   ],
   "author": "JPI",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/JPI-code/JoannaPachIbramow_3_01062021/issues"
   },
